@@ -1,4 +1,4 @@
-# Email Writer & Responder
+# Gen-a-email : Email Writer & Responder Agent
 
 ## Overview
 This is a Streamlit-based application that assists users in generating, responding to, and paraphrasing emails using Google's Gemini AI. The application provides three key functionalities:
