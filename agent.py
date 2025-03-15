@@ -130,7 +130,7 @@ def render_download_button(content, file_name, mime_type="text/plain"):
 def main():
     # Set page configuration
     st.set_page_config(
-        page_title="Email Writer & Responder",
+        page_title="Gen-a-email : Email Writer & Responder Agent",
         page_icon="✉️",
         layout="wide",
     )
