@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 class GeminiInterface:
-    def __init__(self, api_key, model_name="gemini-2.0-flash-exp"):
+    def __init__(self, api_key, model_name="gemini-2.0-flash-lite"):
         # Configure API
         genai.configure(api_key=api_key)
 
