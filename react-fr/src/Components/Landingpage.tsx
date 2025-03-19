@@ -508,7 +508,7 @@ const LandingPage = () => {
                                 <div>
                                     <h3 className="text-xl font-semibold mb-4">1. Clone the repository</h3>
                                     <div className="bg-gray-800 p-4 rounded-md">
-                                        <code className="text-blue-400">git clone https://github.com/your-repo/email-writer-responder.git</code>
+                                        <code className="text-blue-400">git clone https://github.com/ayazmirza54/gen-email-agent-ai.git</code>
                                     </div>
                                 </div>
                                 <div>
