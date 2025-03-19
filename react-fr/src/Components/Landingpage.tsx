@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Mail, MessageSquare, RefreshCw, Download, Settings, ChevronRight, Star, Shield, Zap } from 'lucide-react';
 import { emailService, EmailGenerationData, EmailAnalysisData } from '../services/api.ts'
 import ReactMarkdown from 'react-markdown';
-import  logo from "../assets/mail.png"
+import logo from "../assets/mail.png"
 const LandingPage = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [loading, setLoading] = useState(false);
@@ -93,7 +93,7 @@ const LandingPage = () => {
 
     const features = [
         {
-            icon: <Mail size={24}/>,
+            icon: <Mail size={24} />,
             title: "Email Generator",
             description: "Create well-structured emails with customized tone, key points, and attachments.",
         },
@@ -149,19 +149,19 @@ const LandingPage = () => {
             {/* Content */}
             <div className="relative z-10">
                 {/* Header */}
-                <header className="px-6 py-4 flex justify-between items-center">
-                    <div className="flex items-center space-x-2">
-                        <img src={logo} alt="Logo" height={40} width={40}/>
+                <header className="px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+                    <div className="flex items-center space-x-2 mb-4 md:mb-0">
+                        <img src={logo} alt="Logo" height={40} width={40} />
                         <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Gen-a-email</h1>
                     </div>
-                    <nav>
-                        <ul className="flex space-x-6">
+                    <nav className="mb-4 md:mb-0 w-full md:w-auto">
+                        <ul className="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
                             <li><a href="#features" className="text-gray-300 hover:text-white transition">Features</a></li>
                             <li><a href="#how-it-works" className="text-gray-300 hover:text-white transition">How It Works</a></li>
                             <li><a href="#installation" className="text-gray-300 hover:text-white transition">Installation</a></li>
                         </ul>
                     </nav>
-                    <button className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium">Get Started</button>
+                    <button className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium w-full md:w-auto">Get Started</button>
                 </header>
 
                 {/* Hero Section */}
@@ -554,8 +554,8 @@ const LandingPage = () => {
                                 <Mail className="text-blue-400" size={24} />
                                 <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Gen-a-email</h2>
                             </div>
-                            <nav>
-                                <ul className="flex space-x-6">
+                            <nav className="w-full md:w-auto">
+                                <ul className="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
                                     <li><a href="#features" className="text-gray-300 hover:text-white transition">Features</a></li>
                                     <li><a href="#how-it-works" className="text-gray-300 hover:text-white transition">How It Works</a></li>
                                     <li><a href="#installation" className="text-gray-300 hover:text-white transition">Installation</a></li>
