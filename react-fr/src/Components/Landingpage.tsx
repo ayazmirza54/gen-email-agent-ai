@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Mail, MessageSquare, RefreshCw, Download, Settings, ChevronRight, Star, Shield, Zap } from 'lucide-react';
 import { emailService, EmailGenerationData, EmailAnalysisData } from '../services/api.ts'
 import ReactMarkdown from 'react-markdown';
-
+import  logo from "../assets/mail.png"
 const LandingPage = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [loading, setLoading] = useState(false);
@@ -93,7 +93,7 @@ const LandingPage = () => {
 
     const features = [
         {
-            icon: <Mail size={24} />,
+            icon: <Mail size={24}/>,
             title: "Email Generator",
             description: "Create well-structured emails with customized tone, key points, and attachments.",
         },
@@ -151,7 +151,7 @@ const LandingPage = () => {
                 {/* Header */}
                 <header className="px-6 py-4 flex justify-between items-center">
                     <div className="flex items-center space-x-2">
-                        <Mail className="text-blue-400" size={28} />
+                        <img src={logo} alt="Logo" height={40} width={40}/>
                         <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">Gen-a-email</h1>
                     </div>
                     <nav>
