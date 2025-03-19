@@ -161,8 +161,8 @@ const LandingPage = () => {
                             <li><a href="#installation" className="text-gray-300 hover:text-white transition">Installation</a></li>
                         </ul>
                     </nav>
-                    <button className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium w-full md:w-auto">Get Started</button>
-                </header>
+                   <a href='#emailapp'> <button className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium w-full md:w-auto">Get Started</button>
+                   </a>   </header>
 
                 {/* Hero Section */}
                 <section className="px-6 py-16 md:py-24 max-w-6xl mx-auto text-center">
@@ -173,16 +173,16 @@ const LandingPage = () => {
                         Generate professional emails, craft perfect replies, and paraphrase content in seconds with our Gemini AI-powered tool.
                     </p>
                     <div className="flex flex-col md:flex-row justify-center gap-4 mb-16">
-                        <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium text-lg">
+                       <a href='#emailapp'> <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium text-lg">
                             Try Gen-a-email Free
-                        </button>
+                        </button></a>
                         <button className="px-6 py-3 bg-gray-800 border border-gray-700 rounded-md hover:bg-gray-700 transition font-medium text-lg">
                             Watch Demo
                         </button>
                     </div>
 
                     {/* App preview */}
-                    <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow-2xl max-w-4xl mx-auto">
+                    <div id="emailapp" className="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow-2xl max-w-4xl mx-auto">
                         <div className="flex gap-4 mb-4 border-b border-gray-700 pb-4">
                             {["Email Generator", "Email Reply", "Paraphraser"].map((tab, index) => (
                                 <button
