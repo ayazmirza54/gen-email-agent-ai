@@ -176,9 +176,6 @@ const LandingPage = () => {
                        <a href='#emailapp'> <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-md hover:opacity-90 transition font-medium text-lg">
                             Try Gen-a-email Free
                         </button></a>
-                        <button className="px-6 py-3 bg-gray-800 border border-gray-700 rounded-md hover:bg-gray-700 transition font-medium text-lg">
-                            Watch Demo
-                        </button>
                     </div>
 
                     {/* App preview */}
