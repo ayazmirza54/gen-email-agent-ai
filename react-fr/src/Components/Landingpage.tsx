@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, MessageSquare, RefreshCw, Download, Settings, ChevronRight, Star, Shield, Zap } from 'lucide-react';
 import { emailService, EmailGenerationData, EmailAnalysisData } from '../services/api.ts'
+import ReactMarkdown from 'react-markdown';
 
 const LandingPage = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -406,7 +407,9 @@ const LandingPage = () => {
                             {result && (
                                 <div className="mt-4 p-4 bg-gray-700 rounded-md">
                                     <h3 className="text-lg font-semibold mb-2">Generated Content:</h3>
-                                    <div className="whitespace-pre-wrap text-gray-200">{result}</div>
+                                    <div className="whitespace-pre-wrap text-gray-200 bg-gray-800 p-3 rounded border border-gray-600 overflow-auto max-h-96">
+                                        <ReactMarkdown>{result}</ReactMarkdown>
+                                    </div>
                                     <div className="mt-4 flex justify-end">
                                         <button
                                             className="px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-700 transition font-medium flex items-center"
