@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Mail, MessageSquare, RefreshCw, Download, Settings, ChevronRight, Star, Shield, Zap } from 'lucide-react';
 
 const LandingPage = () => {
